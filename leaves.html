@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="Leaves">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Leave Page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="js/lib/bootstrap-3.0/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- Custom styles for this template -->
+</head>
+<body ng-controller="leavesController" style="background-color: #eee ">
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                    class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Status Tracker +</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="#" ng-click="goBacktoStatusPage()">Status</a></li>
+                <li class="active"><a href="#">Leaves</a></li>
+            </ul>
+            <button type="button" id ="Haani" class="navbar-btn navbar-right" data-toggle="popover" data-placement="bottom" data-content="Sign Out" data-container="body">User Name
+           <span class="glyphicon glyphicon-user"></span>
+        </button>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <h4>Coming Soon....</h4>
+    <script src="js/lib/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/lib/bootstrap-3.0/js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/lib/angular.min.js" type="text/javascript"></script>
+    <script src="js/controller/leavesController.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('#Haani').popover({ html: '<button>Signout<button>' });
+    </script>
+</body>
+</html>

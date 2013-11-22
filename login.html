@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="statusTracker">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Status Tracker Login</title>
+    <!-- Bootstrap core CSS -->
+    <link href="js/lib/bootstrap-3.0/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- Custom styles for this template -->
+    <link href="js/lib/bootstrap-3.0/css/signin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container" ng-controller="loginController">
+        <form class="form-signin">
+        <h2 class="form-signin-heading">
+            ST Login</h2>
+        <input type="text" class="form-control" placeholder="Username*" autofocus ng-model="userName">
+        <input type="password" class="form-control" placeholder="Password*" ng-model="password">
+        <!--<label class="checkbox">
+            <input type="checkbox" value="remember-me">
+            Remember me
+        </label>-->
+        <button class="btn btn-lg btn-primary btn-block " type="submit" ng-click="validate()" id="signInBtn">
+            Sign in</button>
+        <button class="btn-link " ng-click="redirectNewUser()">
+            Create an Account</button>
+        <div class="progress progress-striped active hidden" id="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                aria-valuemax="100" id="bar">
+                <span class="sr-only">45% Complete</span>
+            </div>
+        </div>
+        <div class="alert alert-warning hidden" id="requireWarning">
+        <strong>Warning!</strong> Enter the required field.
+        </div>
+        <div class="alert alert-danger hidden" id="CredentialError">
+        <strong>Error!</strong> Username or Password is not correct.
+        </div>
+        </form>
+    </div>
+    <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/lib/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/lib/bootstrap-3.0/js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/lib/jquery.mockjax.js" type="text/javascript"></script>
+    <script src="common/js/mockjax.js" type="text/javascript"></script>
+    <script src="js/lib/angular.min.js" type="text/javascript"></script>
+    <script src="js/controller/loginController.js" type="text/javascript"></script>
+</body>
+</html>
