@@ -15,7 +15,7 @@ Admin role.
 3. Admin can export an excel having the status of all Employees for a given day but not a day range.
 
 
-Web Service to be used - Probabely using a good REST framework in node.js
+Web Service to be used - restify is a RESTful framework. More can be seen at http://mcavage.me/node-restify/
 
 Hosting of web service - Using NSSM.
 
