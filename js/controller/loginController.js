@@ -13,8 +13,8 @@ loginModule.controller('loginController', function ($scope) {
             $('#signInBtn').addClass('disabled');
             $("#progress").removeClass("hidden");
             $('#bar').width('100%');
-            $.ajax({
-                url: '/authenticate',
+             $.ajax({
+                url: 'http://localhost:8081/login',
                 type: 'POST',
                 data: { username: $scope.userName, password: $scope.password },
                 dataType: 'json',
@@ -23,7 +23,7 @@ loginModule.controller('loginController', function ($scope) {
                       
                         //TODO: Code in server call back
                         setTimeout(function () {
-                            window.location = "status.html"
+                            window.location = "status.html";
                         }, 2000);
 
                         //Session information.

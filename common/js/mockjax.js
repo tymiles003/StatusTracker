@@ -1,4 +1,5 @@
-﻿$.mockjax({
+'use strict'
+$.mockjax({
     url: '/authenticate',
     dataType: 'json',
     responseTime: 2500,
