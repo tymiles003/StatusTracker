@@ -19,6 +19,8 @@ Web Service to be used - restify is a RESTful framework. More can be seen at htt
 
 Hosting of web service - Using NSSM.
 
-Database - Probabely be using a open source DB. Framework to operate over DB will be from the code written in JavaScript.
+Database - MongoDB is being used as NoSQL database. Framework used in node.js to interact with MongoDB is mongoose (mongoosejs.com/docs/index.html)
+
+Writing Excel - For exporting things in excel(https://npmjs.org/package/msexcel-builder)
 
 
