@@ -1,4 +1,4 @@
-﻿var newUserModule = angular.module('Register', []);
+var newUserModule = angular.module('Register', []);
 
 newUserModule.controller('registerController', function ($scope) {
     $scope.userName;
@@ -22,9 +22,9 @@ newUserModule.controller('registerController', function ($scope) {
             $('#bar').width('100%');
             
             $.ajax({
-                url: '/register',
+                url: 'http://localhost:8081/register',
                 type: 'POST',
-                data: { username: $scope.userName, password: $scope.password, name: $scope.firstName },
+                data: { username: $scope.userName, password: $scope.password, firstName: $scope.firstName },
                 dataType: 'json',
                 success: function (json) {
                     $('#CredentialError').removeClass('hidden');
@@ -40,13 +40,13 @@ newUserModule.controller('registerController', function ($scope) {
                         $('#progress').addClass('hidden');
                     }
 
-                } .bind(this)
+                }.bind(this)
             });
         }
 
     };
 
     $scope.backToLogin = function () {
-        window.location = 'login.html'
+        window.location = 'login.html';
     };
 });

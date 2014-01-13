@@ -15,6 +15,7 @@ loginModule.controller('loginController', function ($scope) {
             $('#bar').width('100%');
              $.ajax({
                 url: 'http://localhost:8081/login',
+                //url: 'http://localhost:8081/export',
                 type: 'POST',
                 data: { username: $scope.userName, password: $scope.password },
                 dataType: 'json',

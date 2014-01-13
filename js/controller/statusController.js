@@ -1,4 +1,4 @@
-﻿var statusModule = angular.module('Status', []);
+var statusModule = angular.module('Status', []);
 
 statusModule.controller('statusController', function ($scope) {
     $scope.workedOn;
