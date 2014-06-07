@@ -1,0 +1,16 @@
+{
+  "name": "StatusTracker",
+  "version": "0.1.0",
+  "description": "A Status tracking application",
+  "main": "STRESTService.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Syed Haani Hasan",
+  "dependencies":{
+	"restify": "1.3.x",
+	"mongoose": "3.8.x",
+	"msexcel-builder": "0.0.x"
+  },
+  "license": "MIT"
+}
